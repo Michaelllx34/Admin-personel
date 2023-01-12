@@ -10,7 +10,7 @@ import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @Data
-@MappedSuperclass()
+@MappedSuperclass()         // 괄호 없어야?
 @EntityListeners(AuditingEntityListener.class)
 public class BaseEntityUpdate {
     @CreatedDate
